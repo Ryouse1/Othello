@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Othello Arena (Web)</title>
+<link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="board" width="640" height="640"></canvas>
+  <div id="panel">
+    <button id="new">New Game</button>
+    <select id="engine">
+      <option value="chatgpt">ChatGPT (冷静)</option>
+      <option value="claude">Claude 3 Opus</option>
+      <option value="egaroucid">Egaroucid</option>
+    </select>
+    <button id="ai-move">AI Move</button>
+    <button id="ai-vs-ai">AI vs AI</button>
+    <div id="log" style="white-space:pre-wrap"></div>
+  </div>
+</div>
+<script type="module" src="/src/js/board.js"></script>
+</body>
+</html>
